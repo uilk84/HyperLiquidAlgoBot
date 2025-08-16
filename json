@@ -1,0 +1,12 @@
+{
+  "name": "hyperliquid-algobot",
+  "version": "1.0.0",
+  "description": "HyperLiquid Algo Bot - Render deployment",
+  "main": "src/backtesting/run.js",
+  "scripts": {
+    "start": "node src/backtesting/run.js --config config/backtest.json",
+    "backtest": "python3 src/backtesting/run.py --config config/backtest.json",
+    "ml-optimize": "python3 src/backtesting/ml_optimize.py --market BTC-PERP --timeframe 15m"
+  },
+  "dependencies": {}
+}
